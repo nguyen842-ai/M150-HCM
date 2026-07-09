@@ -51,7 +51,7 @@
 
     <div class="top-bar">
         <button class="menu-btn" onclick="toggleSidebar()" title="Ẩn/Hiện Menu">☰</button>
-        <div class="app-title">Hệ Thống Báo Cáo KAE</div>
+        <div class="app-title">M150-Team HCM</div>
     </div>
 
     <div class="sidebar" id="sidebar">
@@ -66,14 +66,14 @@
             <div class="form-group">
                 <label>Tên nhân viên:</label>
                 <select id="input-staff" required onchange="updateTotalCustomer()">
-                    <option value="" disabled selected>⏳ Đang tải dữ liệu từ Sheet...</option>
+                    <option value="" disabled selected>⏳ Đang tải dữ liệu...</option>
                 </select>
                 <div id="loading-staff" class="loading-text">Đang đồng bộ danh sách nhân viên...</div>
             </div>
 
             <div class="form-group">
                 <label>Tổng DSKH:</label>
-                <input type="text" id="input-total-dskh" readonly placeholder="Tự động cập nhật...">
+                <input type="text" id="input-total-dskh" readonly placeholder="...">
             </div>
 
             <div class="form-group">
@@ -111,7 +111,7 @@
 
     <script>
         // --- CẤU HÌNH API LINK ---
-        const API_URL = 'https://script.google.com/macros/s/AKfycbxOQGWi-X7TGarNqhDv7RiVjp_K2Vz6wJqhaDsq7VxEkt8HFrvX6LUyoas53Kb6--wi/exec';
+        const API_URL = 'https://script.google.com/macros/s/AKfycbxlfNvQ5ZgV3z5MfiKMqvfJDwCNTUE7-ODYEDptwe6RHU_vB-KpzxPUpS04RGL8rj0/exec';
 
         // Set mặc định ngày hôm nay
         document.getElementById('input-date').valueAsDate = new Date();
